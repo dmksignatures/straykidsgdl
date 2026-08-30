@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>STAY GDL — Que Stray Kids venga a Guadalajara</title>
+<meta name="description" content="Firma para pedir que Stray Kids incluya Guadalajara en su próxima gira.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="noise"></div>
+
+<!-- ===================== PANTALLA 1: BOLETO / REGISTRO ===================== -->
+<main id="gate" class="gate">
+  <div class="ticket">
+    <div class="ticket__stub">
+      <span class="ticket__rotated">ADMIT ONE</span>
+      <span class="ticket__num">GDL-753</span>
+    </div>
+
+    <div class="ticket__body">
+      <p class="eyebrow">Antes de entrar</p>
+      <h1 class="ticket__title">Deja tu correo<br>para firmar</h1>
+      <p class="ticket__sub">
+        Te mandamos una copia de tu firma y avisos si la petición
+        junta las firmas suficientes. Nada de spam, una sola vez.
+      </p>
+
+      <form id="gate-form" class="gate-form" novalidate>
+        <label for="email" class="sr-only">Correo electrónico</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="tucorreo@ejemplo.com"
+          required
+          autocomplete="email"
+        >
+        <button type="submit" id="gate-submit">
+          <span class="btn-label">Entrar y firmar</span>
+        </button>
+      </form>
+      <p id="gate-error" class="gate-error" role="alert" aria-live="polite"></p>
+      <p id="gate-loading" class="gate-loading" aria-live="polite">Enviando…</p>
+    </div>
+  </div>
+</main>
+
+<!-- ===================== PANTALLA 2: PETICIÓN ===================== -->
+<section id="petition" class="petition hidden">
+
+  <header class="petition__hero">
+    <p class="eyebrow">Petición ciudadana · STAY Guadalajara</p>
+    <h1 class="hero-title">
+      GUADALAJARA<br>
+      <span>PIDE</span> STRAY KIDS
+    </h1>
+    <p class="hero-sub">
+      Somos miles de STAY en Jalisco esperando un concierto propio, sin
+      cruzar medio país. Cada firma es una razón más para que Guadalajara
+      entre al mapa de la gira.
+    </p>
+  </header>
+
+  <div class="meter-card">
+    <div class="meter-top">
+      <span class="meter-count" id="count">753</span>
+      <span class="meter-goal">de <strong>1,000</strong> firmas</span>
+    </div>
+    <div class="meter-track" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="753" id="meter-track">
+      <div class="meter-fill" id="meter-fill"></div>
+    </div>
+    <p class="meter-hint" id="meter-hint">Faltan <strong id="remaining">247</strong> firmas para llegar a la meta.</p>
+
+    <button id="sign-btn" class="sign-btn">
+      <span class="btn-label">Firmar la petición</span>
+    </button>
+    <p id="sign-msg" class="sign-msg" aria-live="polite"></p>
+  </div>
+
+  <section class="why">
+    <h2>¿Por qué esta petición?</h2>
+    <div class="why-grid">
+      <article>
+        <span class="why-num">01</span>
+        <h3>Nos toca a nosotros</h3>
+        <p>La gira ha pasado por Ciudad de México y Monterrey, pero nunca por Jalisco. Guadalajara tiene la fanaticada y el recinto para llenarlo.</p>
+      </article>
+      <article>
+        <span class="why-num">02</span>
+        <h3>Le sale caro a la familia STAY</h3>
+        <p>Viajar a otra ciudad para un solo show significa boleto, hotel y transporte extra que muchos fans no pueden cubrir.</p>
+      </article>
+      <article>
+        <span class="why-num">03</span>
+        <h3>Guadalajara ya lo ha demostrado</h3>
+        <p>La ciudad ha recibido giras de K-pop con recintos llenos. La infraestructura y el público ya están listos.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="petition__footer">
+    <p>Esta es una iniciativa de fans, sin fines de lucro, para reunir apoyo y compartirlo con la agencia y los promotores de la gira.</p>
+  </footer>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
