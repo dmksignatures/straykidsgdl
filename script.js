@@ -7,7 +7,7 @@
 //    (la URL que te da Formspree se ve como https://formspree.io/f/xxxxabcd)
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xnpqjjjk";
 
-const GOAL = 1000;
+const GOAL = 100000;
 const START_VALUE = 753;
 const STORAGE_COUNT = "skgdl_count";
 

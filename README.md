@@ -1,7 +1,7 @@
 # STAY GDL — Petición para que Stray Kids venga a Guadalajara
 
 Sitio estático: pantalla de registro por correo → petición con meta de
-firmas (753/1000, cada clic suma 1).
+firmas (753/100,000, cada clic suma 1).
 
 ## Antes de publicarlo — 2 pasos obligatorios
 
@@ -28,7 +28,7 @@ mucho tráfico revisa sus planes pagados.
 
 ### 2. El contador de firmas
 
-El contador (753 → 1000) está hecho completamente en `script.js`, sin
+El contador (753 → 100,000) está hecho completamente en `script.js`, sin
 llamar a ningún servicio externo. No necesitas configurar nada para que
 funcione: arranca en 753 y sube de uno en uno cada vez que alguien le da
 a "Firmar la petición".
@@ -84,5 +84,5 @@ Con eso el sitio ya queda público.
 
 - El texto de la petición, el "por qué" y las cifras están directamente
   en `index.html` — puedes editarlos con cualquier editor de texto.
-- La meta (1000) y el valor inicial (753) están al principio de
+- La meta (100000) y el valor inicial (753) están al principio de
   `script.js` en `GOAL` y `START_VALUE`, por si los quieres cambiar.
